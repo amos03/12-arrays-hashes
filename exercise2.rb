@@ -37,3 +37,11 @@ locate_item(grocery_list, "bananas")
 #display second item in list
 
 puts "The second item on your list is #{grocery_list[1]}."
+
+#sort alphabetically
+puts "...."
+puts "Sorting your grocery list ..."
+sorted_grocery_list = grocery_list.sort
+
+#output list again
+print_list(sorted_grocery_list, grocery_item)
