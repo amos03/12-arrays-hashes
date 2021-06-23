@@ -18,3 +18,4 @@ grocery_list << "rice"
 
 print_list(grocery_list, grocery_item)
 
+puts "There are #{grocery_list.length} items in your list."
