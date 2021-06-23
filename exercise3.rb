@@ -12,3 +12,9 @@ end
 end
 
 output_hash_roster(students, key_cohort, value_students)
+
+puts "Adding another cohort"
+students[:cohort4]=43
+
+puts "Display all keys in hash:"
+puts students.keys
