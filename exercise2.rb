@@ -45,3 +45,15 @@ sorted_grocery_list = grocery_list.sort
 
 #output list again
 print_list(sorted_grocery_list, grocery_item)
+
+#removing salmon
+grocery_list.delete("salmon")
+puts "Deleting salmon."
+
+#sort alphabetically
+puts "...."
+puts "Sorting your grocery list ..."
+sorted_grocery_list = grocery_list.sort
+
+#output sorted list once more
+print_list(sorted_grocery_list, grocery_item)
