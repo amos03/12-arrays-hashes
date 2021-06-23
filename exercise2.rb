@@ -19,3 +19,17 @@ grocery_list << "rice"
 print_list(grocery_list, grocery_item)
 
 puts "There are #{grocery_list.length} items in your list."
+
+
+
+#method to check if an item is in a given array
+def locate_item(list, item)
+if list.include?("#{item}")
+    puts "You need to pick up #{item}."
+else
+    puts "You don't need to pick up #{item} today."
+end
+end
+
+#call method using bananas
+locate_item(grocery_list, "bananas")
