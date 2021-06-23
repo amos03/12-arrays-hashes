@@ -33,3 +33,7 @@ end
 
 #call method using bananas
 locate_item(grocery_list, "bananas")
+
+#display second item in list
+
+puts "The second item on your list is #{grocery_list[1]}."
