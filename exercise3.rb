@@ -18,3 +18,11 @@ students[:cohort4]=43
 
 puts "Display all keys in hash:"
 puts students.keys
+
+puts "Each cohort has been expanded by 5%."
+
+students.each do |k,v|
+    students[k]=(v*1.05).round
+end
+
+output_hash_roster(students, key_cohort, value_students)
