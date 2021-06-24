@@ -26,3 +26,8 @@ students.each do |k,v|
 end
 
 output_hash_roster(students, key_cohort, value_students)
+
+puts "Deleting the second cohort"
+students.delete(:cohort2)
+
+output_hash_roster(students, key_cohort, value_students)
