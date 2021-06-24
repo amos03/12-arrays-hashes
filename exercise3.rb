@@ -31,3 +31,9 @@ puts "Deleting the second cohort"
 students.delete(:cohort2)
 
 output_hash_roster(students, key_cohort, value_students)
+
+total = 0
+students.each do |k,v|
+    total = total + v
+end
+puts "The total number of students is #{total}."
