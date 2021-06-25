@@ -19,7 +19,7 @@ end
 get_absent_dogs (my_dogs)
 puts "------------------------------------------------"
 
-puts "Calling the neighbor's missing dogs"
+puts "Calling the neighbor's missing dogs:"
 neighbor_dogs = [
     {name: "Kelev", position: 5},
     {name: "Chatul", position: 8},
