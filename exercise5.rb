@@ -11,21 +11,28 @@ my_dogs = [
     {name: "Spot", position: 12} 
 ]
 
-# def get_absent_dogs (dogs_array)
-#     dogs_array.select do |v| v>10
-# end
-# end
+def identify_absent_dogs (dogs_array)
+absent_dogs = []
+dogs_array.each do |dog|
+    if dog[:position] > 10
+        absent_dogs.push(dog[:name])
+    end
+end
+return absent_dogs
+end
 
-# get_absent_dogs(my_dogs)
+p identify_absent_dogs(my_dogs)
 
-#not working because of the hash inside the array - think about this later
+my_dogs.select do |dog|
+    if dog[:position]>10
+        puts "Come back, #{dog[:name]}!"
+    end
+end
 
 
 # Your dogs all see a squirrel and chase it. Increase their position values by 5 using Array.map!.
 
-
-my_dogs.each do |dog|
-        dog[:position]=dog[:position]+5| 
+my_dogs.map! do |dog|
+    dog[:position] = dog[:position]+5
+   p dog 
 end
-
-# def chase_squirrel (dogs_array)
